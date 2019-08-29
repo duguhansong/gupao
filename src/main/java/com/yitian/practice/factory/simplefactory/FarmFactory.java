@@ -1,10 +1,9 @@
-package com.yitian.practice.factory.factorymethod;
+package com.yitian.practice.factory.simplefactory;
 
-import com.yitian.practice.factory.Apple;
-import com.yitian.practice.factory.Grape;
-import com.yitian.practice.factory.Peach;
-import com.yitian.practice.factory.Product;
-import com.yitian.practice.factory.Type;
+import com.yitian.practice.factory.factorymethod.product.Apple;
+import com.yitian.practice.factory.factorymethod.product.Grape;
+import com.yitian.practice.factory.factorymethod.product.Peach;
+import com.yitian.practice.factory.factorymethod.product.Product;
 
 /**
  * 静态工厂方法

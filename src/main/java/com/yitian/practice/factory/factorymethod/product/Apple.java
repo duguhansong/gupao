@@ -1,4 +1,4 @@
-package com.yitian.practice.factory;
+package com.yitian.practice.factory.factorymethod.product;
 
 public class Apple extends Product {
 
