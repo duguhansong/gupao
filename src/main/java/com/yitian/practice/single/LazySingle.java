@@ -4,7 +4,6 @@ package com.yitian.practice.single;
  */
 public final class LazySingle {
 	private static LazySingle ins = null;
-
 	private LazySingle() {
 		if(ins != null)
 			throw new UnsupportedOperationException("不支持多实例");
