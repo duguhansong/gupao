@@ -1,7 +1,9 @@
 package com.yitian.practice.single;
 
 import java.util.HashMap;
-
+/**
+ * ÈÝÆ÷Ê½µ¥Àý
+ */
 public final class CacheSingleton {
 	private final static HashMap< String, Object> cache = new HashMap<String,Object>();
 	private CacheSingleton() {

@@ -1,18 +1,23 @@
 package com.yitian.practice.single;
-
+/**
+ * 优点：java sdk在序列化反序列化时,增加了对枚举单例的处理.
+ * 缺点: 此写法不太常用
+ */
 public enum EnumSingleton {
-	helloIns("hello实例"){
+	helloIns("enum singleton"){
 		@Override
 		public void say() {
-			System.out.println("my name is hello实例");
+			String msg = String.format("这是枚举式单例示例 :%s", this.singletonname);
+			System.out.println(msg);
 		}
-	},
-	wordIns("word实例");
-	private String singletonname = null;
+	};
+	protected String singletonname = null;
 	private EnumSingleton(String name) {
 		this.singletonname = name;
 	}
-	public  void say() {
-		System.out.println(singletonname);
+	public abstract void say();
+	
+	public static void main(String[] args) {
+		EnumSingleton.helloIns.say();
 	}
 }
