@@ -1,2 +1,16 @@
 课后作业：
 运用原型模式重构一段业务代码。
+
+原型模式要点：
+1.深克隆与潜克隆
+2.各拷贝工具类的拷贝效率、功能差别
+   apache:beanUtils
+   spring:BeanUtils
+   cglib:BeanCopier
+ 
+ 40个属性拷贝,拷贝10000次  
+手工耗时:10毫秒;
+apache耗时:3233毫秒;
+spring耗时:341毫秒;
+cglib耗时:4毫秒;
+   
