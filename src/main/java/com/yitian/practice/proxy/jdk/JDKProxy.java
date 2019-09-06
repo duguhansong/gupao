@@ -1,14 +1,10 @@
-package com.yitian.practice.proxy;
+package com.yitian.practice.proxy.jdk;
 
-import java.io.Serializable;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
-public class JDKProxy implements InvocationHandler,Serializable {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+public class JDKProxy implements InvocationHandler {
+
 	private Object ins;
 	
 	public JDKProxy(Object ins) {
@@ -16,7 +12,7 @@ public class JDKProxy implements InvocationHandler,Serializable {
 	}
 
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-		System.out.println("动态代理检查权限...");
+		System.out.println("代理执行" +method.getName() + "方法");
 		return method.invoke(this.ins, args);
 	}
 }

@@ -1,4 +1,8 @@
-package com.yitian.practice.proxy;
+package com.yitian.practice.proxy.staticProxy;
+
+import com.yitian.practice.proxy.IOrderService;
+import com.yitian.practice.proxy.OrderServiceImpl;
+
 /**
  * ¾²Ì¬´úÀí
  */
