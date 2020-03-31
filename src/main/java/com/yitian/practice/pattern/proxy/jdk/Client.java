@@ -8,8 +8,6 @@ import java.lang.reflect.Proxy;
 import com.yitian.practice.pattern.proxy.IOrderService;
 import com.yitian.practice.pattern.proxy.OrderServiceImpl;
 
-import sun.misc.ProxyGenerator;
-
 @SuppressWarnings("restriction")
 public class Client {
 
@@ -36,7 +34,8 @@ public class Client {
 	public void export() {
 		String path ="e://tmp";
 		String className= "$Proxy0";
-		byte[] classFile = ProxyGenerator.generateProxyClass(className, OrderServiceImpl.class.getInterfaces());
+//		byte[] classFile = ProxyGenerator.generateProxyClass(className, OrderServiceImpl.class.getInterfaces());
+		byte[] classFile = null;
 		FileOutputStream out = null;
 		try {
 			String filePath = path + "/" + className + ".class";
